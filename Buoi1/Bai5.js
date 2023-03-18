@@ -1,5 +1,4 @@
 
-
 async function Cau5(input){
     try{
         let json1= await fetch(input);
@@ -12,5 +11,4 @@ async function Cau5(input){
 // thành công
 Cau5('https://jsonplaceholder.typicode.com/users');
 //lỗi
-
 Cau5('https://rerejsonplaceholder.typicode.com/users')
