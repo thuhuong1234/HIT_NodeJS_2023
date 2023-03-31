@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td,th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            font-size: 8px;
+        
+        }
+        tr:nth-child(even) { 
+            background-color: #dddddd;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <%- include("./header.ejs") %>
+    </div>
+    <table>
+        <tr>
+            <th>title</th>
+            <th>price</th>
+            <th>description</th>
+            <th>image</th>
+            <th>category</th>
+            <th>rating</th>
+        </tr>
+        <% for(let item of product){ %>
+            <tr>
+                <th><%= item.title %></th>
+                <th><%= item.price %></th>
+                <th><%= item.description %></th>
+                <th><%= item.category %></th>
+                <th><img style="width:50px" src="<%= item.image %>" alt=""></th>
+                <th><%= item.rating.rate %></th>
+            </tr>
+            
+        <% } %>
+    </table>
+    <div>
+        <%- include("./footer.ejs") %>
+    </div>
+</body>
+</html>
