@@ -1,9 +1,10 @@
 
 let arrA = [1, 7, 4, 2, 3,5,3,3,3,4,2,4,6,1,5];
-let arrB = [5, 2, 6, 3, 1];
+let arrB = [5, 2, 6, 3,3, 1];
 let arrC = [];
 var newArrA=[];
 var newArrB=[];
+
     newArrA=arrA.filter(function(item,index){
         return arrA.indexOf(item) ===index
     })

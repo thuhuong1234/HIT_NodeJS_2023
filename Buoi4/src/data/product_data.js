@@ -44,6 +44,7 @@ class Product{
         products.splice(index,1);
         saveData(products);
     }
+
 }
 
 module.exports=Product;

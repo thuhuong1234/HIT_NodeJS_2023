@@ -11,11 +11,11 @@ const {
 } = require("../controllers/productController")
 
 
-// CRUD
-router.get("/products", getProducts); // -> READ
-router.post("/products", createProduct); // -> CREATE
-router.get("/products/:productId", getProductById); // -> READ
-router.put("/products/:productId", updateProductById); // -> UPDATE
-router.delete("/products/:productId", deleteProductById); // -> DELETE
+
+router.get("/products", getProducts); 
+router.post("/products", createProduct);
+router.get("/products/:productId", getProductById);
+router.put("/products/:productId", updateProductById); 
+router.delete("/products/:productId", deleteProductById);
 
 module.exports = router;
